@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridSync Engineering | Electrical Engineering Solutions</title>
+    <meta name="description" content="GridSync Engineering specializes in electrical engineering projects including solar installation for homes and large establishments in the Philippines.">
+    <meta name="keywords" content="electrical engineering, solar installation, Philippines, Pampanga, GridSync Engineering">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#253848",
+                        highlight: "#feae32",
+                        text: "#575757"
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.8s ease-in-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'pulse-slow': 'pulse 3s infinite'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #253848 0%, #1a2a38 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .highlight-border {
+            border-left: 4px solid #feae32;
+        }
+        .btn-primary {
+            background-color: #feae32;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #e69a2b;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white font-inter text-text">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md animate-fade-in">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+               <div class="flex items-center">
+    <a href="https://gridsync.engineering">
+        <img
+            src="images/gridsync-logo.png"
+            alt="GridSync Engineering"
+            class="h-14 w-auto"
+        >
+    </a>
+</div>
+                
+                <div class="hidden md:flex space-x-8" id="desktop-nav">
+                    <!-- Navigation will be rendered here -->
+                </div>
+                
+                <button class="md:hidden text-primary" id="mobile-menu-btn">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 hidden" id="mobile-nav">
+                <!-- Mobile navigation will be rendered here -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="max-w-3xl animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Powering the Future with <span class="text-highlight">Sustainable</span> Energy Solutions</h2>
+                <p class="text-lg mb-8 opacity-90">GridSync Engineering specializes in cutting-edge electrical engineering projects, with expertise in solar installation for homes and large establishments across the Philippines.</p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="btn-primary text-primary font-semibold px-6 py-3 rounded-lg inline-flex items-center space-x-2">
+                        <span>Get Free Consultation</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="bg-white/10 text-white font-semibold px-6 py-3 rounded-lg border border-white/20 hover:bg-white/20 transition inline-flex items-center space-x-2">
+                        <span>Our Services</span>
+                        <i class="fas fa-solar-panel"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-gray-50" id="services">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Specialized Services</h2>
+                <p class="text-lg text-text/80 max-w-2xl mx-auto">Comprehensive electrical engineering solutions tailored to your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+                <!-- Services will be rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="py-16 bg-white" id="projects">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Featured Projects</h2>
+                <p class="text-lg text-text/80 max-w-2xl mx-auto">Showcasing our expertise in solar installation and electrical engineering</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="projects-grid">
+                <!-- Projects will be rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-primary text-white" id="why-us">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose GridSync Engineering</h2>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">Experience, expertise, and commitment to excellence</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="benefits-grid">
+                <!-- Benefits will be rendered here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-gray-50" id="contact">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-primary text-white p-8">
+                        <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-highlight/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-highlight"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Our Location</h4>
+                                    <p class="opacity-90">Lubao, Pampanga, Philippines</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-highlight/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone text-highlight"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Call Us</h4>
+                                    <p class="opacity-90">0917-567-1768</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 bg-highlight/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-highlight"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email Us</h4>
+                                    <p class="opacity-90">contact@gridsync.engineering</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 pt-8 border-t border-white/20">
+                            <h4 class="font-semibold mb-4">Business Hours</h4>
+                            <p class="opacity-90">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p class="opacity-90">Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold text-primary mb-6">Send us a Message</h3>
+                        <form id="contact-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-text mb-1">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-highlight focus:border-transparent" required>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-text mb-1">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-highlight focus:border-transparent" required>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-text mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-highlight focus:border-transparent">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-text mb-1">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-highlight focus:border-transparent">
+                                    <option value="">Select a service</option>
+                                    <option value="solar-home">Solar Installation for Home</option>
+                                    <option value="solar-commercial">Solar Installation for Commercial</option>
+                                    <option value="electrical-design">Electrical System Design</option>
+                                    <option value="maintenance">Electrical Maintenance</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-text mb-1">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-highlight focus:border-transparent" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary text-primary font-semibold px-6 py-3 rounded-lg w-full">
+                                Send Message <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-highlight rounded-lg flex items-center justify-center">
+                            <i class="fas fa-bolt text-primary text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">GridSync<span class="text-highlight">.</span>Engineering</h3>
+                        </div>
+                    </div>
+                    <p class="opacity-80">Specializing in electrical engineering projects and solar installation solutions across the Philippines.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2" id="footer-links">
+                        <!-- Footer links will be rendered here -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+                    <ul class="space-y-2" id="footer-services">
+                        <!-- Footer services will be rendered here -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4 mb-6" id="social-links">
+                        <!-- Social links will be rendered here -->
+                    </div>
+                    <div class="bg-white/10 p-4 rounded-lg">
+                        <p class="text-sm opacity-90 mb-2">Ready to power your project?</p>
+                        <a href="tel:09175671768" class="text-highlight font-semibold hover:underline">
+                            <i class="fas fa-phone mr-2"></i>0917-567-1768
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/20 mt-8 pt-8 text-center">
+                <p class="opacity-80">&copy; <span id="current-year"></span> GridSync Engineering. All rights reserved.</p>
+                <p class="text-sm opacity-60 mt-2">Lubao, Pampanga, Philippines | contact@gridsync.engineering</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Data Layer
+        const navigationData = [
+           
+            { "label": "Services", "href": "#services"},
+            { "label": "Projects", "href": "#projects"},
+            { "label": "Why Choose Us", "href": "#why-us"},
+            { "label": "Contact", "href": "#contact", "icon": "fas fa-envelope" }
+        ];
+
+        const servicesData = [
+            { 
+                "title": "Solar Installation for Homes", 
+                "description": "Complete solar power solutions for residential properties with efficient energy management systems.",
+                "icon": "fas fa-home",
+                "image": "https://picsum.photos/400/300?random=1",
+                "alt": "Residential solar installation"
+            },
+            { 
+                "title": "Commercial Solar Systems", 
+                "description": "Large-scale solar installations for commercial establishments, factories, and industrial complexes.",
+                "icon": "fas fa-building",
+                "image": "https://picsum.photos/400/300?random=2",
+                "alt": "Commercial solar installation"
+            },
+            { 
+                "title": "Electrical System Design", 
+                "description": "Professional electrical system design and planning for new constructions and renovations.",
+                "icon": "fas fa-bolt",
+                "image": "https://picsum.photos/400/300?random=3",
+                "alt": "Electrical system design"
+            },
+            { 
+                "title": "Energy Efficiency Audits", 
+                "description": "Comprehensive energy audits to identify savings opportunities and optimize power consumption.",
+                "icon": "fas fa-chart-line",
+                "image": "https://picsum.photos/400/300?random=4",
+                "alt": "Energy efficiency audit"
+            },
+            { 
+                "title": "Electrical Maintenance", 
+                "description": "Regular maintenance and troubleshooting services to ensure electrical system reliability.",
+                "icon": "fas fa-tools",
+                "image": "https://picsum.photos/400/300?random=5",
+                "alt": "Electrical maintenance"
+            },
+            { 
+                "title": "Consultation & Planning", 
+                "description": "Expert consultation for electrical projects from concept to completion.",
+                "icon": "fas fa-comments",
+                "image": "https://picsum.photos/400/300?random=6",
+                "alt": "Electrical consultation"
+            }
+        ];
+
+        const projectsData = [
+            { 
+                "title": "Lubao Residential Solar Farm", 
+                "description": "50kW solar installation for a residential community in Lubao, reducing electricity costs by 70%.",
+                "image": "https://picsum.photos/600/400?random=7",
+                "alt": "Lubao residential solar project",
+                "location": "Lubao, Pampanga",
+                "capacity": "50 kW"
+            },
+            { 
+                "title": "Pampanga Industrial Complex", 
+                "description": "200kW commercial solar system for an industrial complex, providing sustainable power for manufacturing.",
+                "image": "https://picsum.photos/600/400?random=8",
+                "alt": "Industrial solar installation",
+                "location": "Pampanga",
+                "capacity": "200 kW"
+            }
+        ];
+
+        const benefitsData = [
+            { 
+                "title": "Years Experience", 
+                "description": "Years of expertise in electrical engineering and solar installations.",
+                "icon": "fas fa-award"
+            },
+            { 
+                "title": "Certified Engineers", 
+                "description": "Licensed and certified electrical engineers ensuring quality and compliance.",
+                "icon": "fas fa-user-graduate"
+            },
+            { 
+                "title": "Quality Materials", 
+                "description": "We use only premium, durable materials from trusted suppliers.",
+                "icon": "fas fa-check-circle"
+            },
+            { 
+                "title": "Support", 
+                "description": "Support for maintenance and emergency services.",
+                "icon": "fas fa-headset"
+            }
+        ];
+
+        const footerLinksData = [
+            { "label": "About Us", "href": "#about" },
+            { "label": "Services", "href": "#services" },
+            { "label": "Projects", "href": "#projects" },
+            { "label": "Contact", "href": "#contact" },
+            { "label": "Privacy Policy", "href": "#privacy" },
+            { "label": "Terms of Service", "href": "#terms" }
+        ];
+
+        const footerServicesData = [
+            { "label": "Solar Installation", "href": "#solar" },
+            { "label": "Electrical Design", "href": "#design" },
+            { "label": "Energy Audits", "href": "#audits" },
+            { "label": "Maintenance", "href": "#maintenance" },
+            { "label": "Consultation", "href": "#consultation" }
+        ];
+
+        const socialLinksData = [
+            { "platform": "Facebook", "icon": "fab fa-facebook-f", "href": "https://facebook.com/gridsync", "color": "hover:text-blue-400" },
+            { "platform": "LinkedIn", "icon": "fab fa-linkedin-in", "href": "https://linkedin.com/company/gridsync", "color": "hover:text-blue-500" },
+            { "platform": "Instagram", "icon": "fab fa-instagram", "href": "https://instagram.com/gridsync", "color": "hover:text-pink-400" },
+            { "platform": "YouTube", "icon": "fab fa-youtube", "href": "https://youtube.com/gridsync", "color": "hover:text-red-400" }
+        ];
+
+        // Reusable Render Functions
+        function renderNavigation(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="text-primary hover:text-highlight font-medium transition-colors duration-300 flex items-center space-x-2"><i class="${item.icon}"></i><span>${item.label}</span></a></li>`
+            ).join("");
+        }
+
+        function renderMobileNavigation(items) {
+            return items.map(item => 
+                `<li class="py-3 border-b border-gray-100"><a href="${item.href}" class="text-primary hover:text-highlight font-medium transition-colors duration-300 flex items-center space-x-3"><i class="${item.icon} w-6"></i><span>${item.label}</span></a></li>`
+            ).join("");
+        }
+
+        function renderServices(items) {
+            return items.map((item, index) => `
+                <div class="bg-white card-hover rounded-xl shadow-md overflow-hidden animate-fade-in" style="animation-delay: ${index * 0.1}s">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="${item.image}" alt="${item.alt}" class="w-full h-full object-cover" loading="lazy">
+                        <div class="absolute top-4 left-4 w-12 h-12 bg-highlight rounded-lg flex items-center justify-center">
+                            <i class="${item.icon} text-white text-xl"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-primary mb-3">${item.title}</h3>
+                        <p class="text-text/80 mb-4">${item.description}</p>
+                        <a href="#contact" class="text-highlight font-semibold hover:underline inline-flex items-center">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        function renderProjects(items) {
+            return items.map((item, index) => `
+                <div class="bg-white card-hover rounded-xl shadow-lg overflow-hidden animate-slide-up" style="animation-delay: ${index * 0.2}s">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="${item.image}" alt="${item.alt}" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" loading="lazy">
+                        <div class="absolute top-4 right-4 bg-highlight text-primary font-bold px-3 py-1 rounded-full">
+                            ${item.capacity}
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-3">
+                            <h3 class="text-xl font-bold text-primary">${item.title}</h3>
+                            <span class="text-sm text-text/70 bg-gray-100 px-3 py-1 rounded-full">
+                                <i class="fas fa-map-marker-alt mr-1"></i>${item.location}
+                            </span>
+                        </div>
+                        <p class="text-text/80 mb-4">${item.description}</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-highlight font-semibold">
+                                <i class="fas fa-check-circle mr-1"></i>Completed Project
+                            </span>
+                            <a href="#contact" class="text-primary hover:text-highlight font-medium">
+                                Similar Project Inquiry <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        function renderBenefits(items) {
+            return items.map((item, index) => `
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-highlight/50 transition-all duration-300 animate-fade-in" style="animation-delay: ${index * 0.15}s">
+                    <div class="w-14 h-14 bg-highlight/20 rounded-xl flex items-center justify-center mb-4">
+                        <i class="${item.icon} text-highlight text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">${item.title}</h3>
+                    <p class="opacity-90">${item.description}</p>
+                </div>
+            `).join("");
+        }
+
+        function renderFooterLinks(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="opacity-80 hover:opacity-100 hover:text-highlight transition">${item.label}</a></li>`
+            ).join("");
+        }
+
+        function renderFooterServices(items) {
+            return items.map(item => 
+                `<li><a href="${item.href}" class="opacity-80 hover:opacity-100 hover:text-highlight transition">${item.label}</a></li>`
+            ).join("");
+        }
+
+        function renderSocialLinks(items) {
+            return items.map(item => 
+                `<a href="${item.href}" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center ${item.color} transition hover:bg-white/20">
+                    <i class="${item.icon}"></i>
+                </a>`
+            ).join("");
+        }
+
+        // Initialize Page
+        document.addEventListener("DOMContentLoaded", function() {
+            // Set current year
+            document.getElementById("current-year").textContent = new Date().getFullYear();
+            
+            // Render navigation
+            document.getElementById("desktop-nav").innerHTML = `<ul class="flex space-x-8">${renderNavigation(navigationData)}</ul>`;
+            document.getElementById("mobile-nav").innerHTML = `<ul>${renderMobileNavigation(navigationData)}</ul>`;
+            
+            // Render services
+            document.getElementById("services-grid").innerHTML = renderServices(servicesData);
+            
+            // Render projects
+            document.getElementById("projects-grid").innerHTML = renderProjects(projectsData);
+            
+            // Render benefits
+            document.getElementById("benefits-grid").innerHTML = renderBenefits(benefitsData);
+            
+            // Render footer content
+            document.getElementById("footer-links").innerHTML = renderFooterLinks(footerLinksData);
+            document.getElementById("footer-services").innerHTML = renderFooterServices(footerServicesData);
+            document.getElementById("social-links").innerHTML = renderSocialLinks(socialLinksData);
+            
+            // Mobile menu toggle
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const mobileNav = document.getElementById("mobile-nav");
+            
+            mobileMenuBtn.addEventListener("click", function() {
+                mobileNav.classList.toggle("hidden");
+                const icon = mobileMenuBtn.querySelector("i");
+                if (mobileNav.classList.contains("hidden")) {
+                    icon.classList.remove("fa-times");
+                    icon.classList.add("fa-bars");
+                } else {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.add("fa-times");
+                }
+            });
+            
+            // Smooth scrolling for all anchor links
+            document.addEventListener("click", function(event) {
+                const link = event.target.closest("a[href^='#']");
+                if (!link) return;
+                
+                const href = link.getAttribute("href");
+                if (href === "#") return;
+                
+                event.preventDefault();
+                const targetElement = document.querySelector(href);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    if (!mobileNav.classList.contains("hidden")) {
+                        mobileNav.classList.add("hidden");
+                        const icon = mobileMenuBtn.querySelector("i");
+                        icon.classList.remove("fa-times");
+                        icon.classList.add("fa-bars");
+                    }
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: "smooth"
+                    });
+                }
+            });
+            
+            // Contact form submission
+            const contactForm = document.getElementById("contact-form");
+            contactForm.addEventListener("submit", function(event) {
+                event.preventDefault();
+                
+                // Get form data
+                const formData = {
+                    name: document.getElementById("name").value,
+                    email: document.getElementById("email").value,
+                    phone: document.getElementById("phone").value,
+                    service: document.getElementById("service").value,
+                    message: document.getElementById("message").value
+                };
+                
+                // In a real implementation, you would send this to a server
+                // For now, we'll just show a success message
+                alert("Thank you for your message, " + formData.name + "! We'll contact you at " + formData.email + " within 24 hours.");
+                
+                // Reset form
+                contactForm.reset();
+            });
+            
+            // Add scroll animation triggers
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-fade-in");
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe all service cards and project cards
+            document.querySelectorAll("#services-grid > div, #projects-grid > div").forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
