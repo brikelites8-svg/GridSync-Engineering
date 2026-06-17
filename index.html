@@ -69,6 +69,8 @@
             transform: scale(1.05);
         }
     </style>
+	    <link rel="icon" type="image/png" href="favicon.png">
+
 </head>
 <body class="min-h-screen bg-white font-inter text-text">
     <!-- Header & Navigation -->
@@ -101,119 +103,237 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-gradient text-white">
-        <div class="container mx-auto px-4 py-16 md:py-24">
-            <div class="max-w-3xl animate-slide-up">
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Powering the Future with <span class="text-highlight">Sustainable</span> Energy Solutions</h2>
-                <p class="text-lg mb-8 opacity-90">GridSync Engineering specializes in cutting-edge electrical engineering projects, with expertise in solar installation for homes and large establishments across the Philippines.</p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="btn-primary text-primary font-semibold px-6 py-3 rounded-lg inline-flex items-center space-x-2">
-                        <span>Get Free Consultation</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-                    <a href="#services" class="bg-white/10 text-white font-semibold px-6 py-3 rounded-lg border border-white/20 hover:bg-white/20 transition inline-flex items-center space-x-2">
-                        <span>Our Services</span>
-                        <i class="fas fa-solar-panel"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="relative text-white bg-cover bg-center bg-no-repeat" style="background-image: url('gridbanner.png');">
+    
+    <!-- dark overlay -->
+   <div class="absolute inset-0" style="background-color: rgba(30, 47, 62, 0.6);"></div>
 
-    <!-- Services Section -->
-    <section class="py-16 bg-gray-50" id="services">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Specialized Services</h2>
-                <p class="text-lg text-text/80 max-w-2xl mx-auto">Comprehensive electrical engineering solutions tailored to your needs</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
-                <!-- Services will be rendered here -->
-            </div>
-        </div>
-    </section>
+    <!-- content -->
+    <div class="relative container mx-auto px-4 py-16 md:py-24">
+        <div class="max-w-3xl animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Powering the Future with <span class="text-highlight">Sustainable</span> Energy Solutions
+            </h2>
 
-    <!-- Featured Projects -->
-    <section class="py-16 bg-white" id="projects">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Featured Projects</h2>
-                <p class="text-lg text-text/80 max-w-2xl mx-auto">Showcasing our expertise in solar installation and electrical engineering</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="projects-grid">
-                <!-- Projects will be rendered here -->
-            </div>
-        </div>
-    </section>
+            <p class="text-lg mb-8 opacity-90">
+                GridSync Engineering specializes in cutting-edge electrical engineering projects, with expertise in solar installation for homes and large establishments across the Philippines.
+            </p>
 
-    <!-- Why Choose Us -->
-    <section class="py-16 bg-primary text-white" id="why-us">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose GridSync Engineering</h2>
-                <p class="text-lg opacity-90 max-w-2xl mx-auto">Experience, expertise, and commitment to excellence</p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="benefits-grid">
-                <!-- Benefits will be rendered here -->
+            <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="btn-primary text-primary font-semibold px-6 py-3 rounded-lg inline-flex items-center space-x-2">
+                    <span>Get Free Consultation</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <a href="#services" class="bg-white/10 text-white font-semibold px-6 py-3 rounded-lg border border-white/20 hover:bg-white/20 transition inline-flex items-center space-x-2">
+                    <span>Our Services</span>
+                    <i class="fas fa-solar-panel"></i>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+ 
+<!-- Services Section -->
+<section class="relative isolate overflow-hidden py-16 bg-gray-50" id="services">
+
+    <!-- Overlay 1: brand tint -->
+    <div class="absolute inset-0 pointer-events-none z-0"
+         style="background-color: rgba(30, 47, 62, 0.05);"></div>
+
+    <!-- Overlay 2: gradient depth -->
+    <div class="absolute inset-0 pointer-events-none z-0"
+         style="background: linear-gradient(to bottom right, rgba(30,47,62,0.08), rgba(30,47,62,0.02));"></div>
+
+    <!-- Overlay 3: texture -->
+    <div class="absolute inset-0 pointer-events-none z-0 opacity-10"
+         style="background-image: radial-gradient(#1e2f3e 1px, transparent 1px);
+                background-size: 18px 18px;"></div>
+
+    <div class="relative z-10 container mx-auto px-4">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Our Specialized Services
+            </h2>
+            <p class="text-lg text-text/80 max-w-2xl mx-auto">
+                Comprehensive electrical engineering solutions tailored to your needs
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+            <!-- Services will be rendered here -->
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Featured Projects -->
+<section class="relative isolate overflow-hidden py-16 bg-white" id="projects">
+
+    <!-- Overlay 1 -->
+    <div class="absolute inset-0 pointer-events-none z-0"
+         style="background-color: rgba(30, 47, 62, 0.03);"></div>
+
+    <!-- Overlay 2 -->
+    <div class="absolute inset-0 pointer-events-none z-0"
+         style="background: linear-gradient(to bottom, rgba(30,47,62,0.05), transparent);"></div>
+
+    <!-- Overlay 3 -->
+    <div class="absolute inset-0 pointer-events-none z-0 opacity-10"
+         style="background-image: radial-gradient(#1e2f3e 1px, transparent 1px);
+                background-size: 22px 22px;"></div>
+
+    <div class="relative z-10 container mx-auto px-4">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">
+                Featured Projects
+            </h2>
+            <p class="text-lg text-text/80 max-w-2xl mx-auto">
+                Showcasing our expertise in solar installation and electrical engineering
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8" id="projects-grid">
+            <!-- Projects will be rendered here -->
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Why Choose Us -->
+<section class="relative isolate overflow-hidden py-16 bg-primary text-white" id="why-us">
+
+    <!-- Overlay 1 -->
+    <div class="absolute inset-0 pointer-events-none z-0"
+         style="background-color: rgba(255, 255, 255, 0.04);"></div>
+
+    <!-- Overlay 2 -->
+    <div class="absolute inset-0 pointer-events-none z-0"
+         style="background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(0,0,0,0.08));"></div>
+
+    <!-- Overlay 3 -->
+    <div class="absolute inset-0 pointer-events-none z-0 opacity-10"
+         style="background-image: radial-gradient(#ffffff 1px, transparent 1px);
+                background-size: 20px 20px;"></div>
+
+    <div class="relative z-10 container mx-auto px-4">
+
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Why Choose GridSync Engineering
+            </h2>
+            <p class="text-lg opacity-90 max-w-2xl mx-auto">
+                Experience, expertise, and commitment to excellence
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="benefits-grid">
+            <!-- Benefits will be rendered here -->
+        </div>
+
+    </div>
+</section>
+
+   
 
     <!-- Contact Section -->
-    <section class="py-16 bg-gray-50" id="contact">
-        <div class="container mx-auto px-4">
-            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
-                <div class="md:flex">
-                    <div class="md:w-1/2 bg-primary text-white p-8">
-                        <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-highlight/20 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-map-marker-alt text-highlight"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Our Location</h4>
-                                    <p class="opacity-90">Lubao, Pampanga, Philippines</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-highlight/20 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-phone text-highlight"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Call Us</h4>
-                                    <p class="opacity-90">0917-567-1768</p>
-                                </div>
-                            </div>
-                            
-                            <div class="flex items-start space-x-4">
-                                <div class="w-10 h-10 bg-highlight/20 rounded-full flex items-center justify-center">
-                                    <i class="fas fa-envelope text-highlight"></i>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold">Email Us</h4>
-                                    <p class="opacity-90">contact@gridsync.engineering</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="mt-8 pt-8 border-t border-white/20">
-                            <h4 class="font-semibold mb-4">Business Hours</h4>
-                            <p class="opacity-90">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                            <p class="opacity-90">Saturday: 9:00 AM - 1:00 PM</p>
-                        </div>
-                    </div>
-                    
-                    
+<!-- Contact Section -->
+<section class="relative isolate overflow-hidden py-16 bg-gray-50" id="contact">
+
+    <!-- Background glow -->
+    <div class="absolute inset-0 pointer-events-none"
+         style="background: radial-gradient(circle at center, rgba(30,47,62,0.08), transparent 70%);">
+    </div>
+
+    <div class="relative container mx-auto px-4">
+
+        <div class="max-w-4xl mx-auto bg-primary rounded-xl shadow-xl overflow-hidden">
+
+            <div class="p-8 md:p-12 text-white">
+
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                        Contact GridSync Engineering
+                    </h2>
+                    <p class="text-lg opacity-90 max-w-2xl mx-auto">
+                        Ready to start your solar or electrical engineering project?
+                        Reach out to us for a free consultation and quotation.
+                    </p>
                 </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-14 h-14 bg-highlight/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-map-marker-alt text-highlight text-xl"></i>
+                        </div>
+
+                        <h4 class="font-semibold text-lg mb-2">
+                            Our Location
+                        </h4>
+
+                        <p class="opacity-90">
+                            Lubao, Pampanga, Philippines
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-14 h-14 bg-highlight/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-phone text-highlight text-xl"></i>
+                        </div>
+
+                        <h4 class="font-semibold text-lg mb-2">
+                            Call Us
+                        </h4>
+
+                        <a href="tel:09175671768"
+                           class="opacity-90 hover:text-highlight transition">
+                            0917-567-1768
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center">
+                        <div class="w-14 h-14 bg-highlight/20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-envelope text-highlight text-xl"></i>
+                        </div>
+
+                        <h4 class="font-semibold text-lg mb-2">
+                            Email Us
+                        </h4>
+
+                        <a href="mailto:contact@gridsync.engineering"
+                           class="opacity-90 hover:text-highlight transition break-all">
+                            contact@gridsync.engineering
+                        </a> 
+                    </div>
+
+                </div>
+
+                <div class="mt-10 pt-8 border-t border-white/20 text-center">
+                    <h4 class="font-semibold text-lg mb-4">
+                        Business Hours
+                    </h4>
+
+                    <p class="opacity-90">
+                        Monday - Friday: 8:00 AM - 6:00 PM
+                    </p>
+
+                    <p class="opacity-90">
+                        Saturday: 9:00 AM - 1:00 PM
+                    </p>
+                </div>
+
             </div>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
 
     <!-- Footer -->
     <footer class="bg-primary text-white py-12">
@@ -247,11 +367,23 @@
                     <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
                     <div class="flex space-x-4 mb-6" id="social-links">
                         <!-- Social links will be rendered here -->
+						 <!-- Facebook -->
+        <a href="https://www.facebook.com/gridsync.engineering target="_blank" class="text-highlight hover:opacity-80 text-xl">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/gridsync-engineering-15a777417/" target="_blank" class="text-highlight hover:opacity-80 text-xl">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
                     </div>
                     <div class="bg-white/10 p-4 rounded-lg">
                         <p class="text-sm opacity-90 mb-2">Ready to power your project?</p>
                         <a href="tel:09175671768" class="text-highlight font-semibold hover:underline">
                             <i class="fas fa-phone mr-2"></i>0917-567-1768
+                        </a><br>
+						<a href="mailto:contact@gridsync.engineering" class="text-highlight font-semibold hover:underline">
+                            <i class="fas fa-envelope"></i>&nbsp;&nbsp;contact@gridsync.engineering
                         </a>
                     </div>
                 </div>
@@ -279,42 +411,42 @@
                 "title": "Solar Installation for Homes", 
                 "description": "Complete solar power solutions for residential properties with efficient energy management systems.",
                 "icon": "fas fa-home",
-                "image": "https://picsum.photos/400/300?random=1",
+                "image": "solarinstallationhome.png",
                 "alt": "Residential solar installation"
             },
             { 
                 "title": "Commercial Solar Systems", 
                 "description": "Large-scale solar installations for commercial establishments, factories, and industrial complexes.",
                 "icon": "fas fa-building",
-                "image": "https://picsum.photos/400/300?random=2",
+                "image": "commercialsolar.png",
                 "alt": "Commercial solar installation"
             },
             { 
                 "title": "Electrical System Design", 
                 "description": "Professional electrical system design and planning for new constructions and renovations.",
                 "icon": "fas fa-bolt",
-                "image": "https://picsum.photos/400/300?random=3",
+                "image": "electricalplan.png",
                 "alt": "Electrical system design"
             },
             { 
                 "title": "Energy Efficiency Audits", 
                 "description": "Comprehensive energy audits to identify savings opportunities and optimize power consumption.",
                 "icon": "fas fa-chart-line",
-                "image": "https://picsum.photos/400/300?random=4",
+                "image": "audit.png",
                 "alt": "Energy efficiency audit"
             },
             { 
                 "title": "Electrical Maintenance", 
                 "description": "Regular maintenance and troubleshooting services to ensure electrical system reliability.",
                 "icon": "fas fa-tools",
-                "image": "https://picsum.photos/400/300?random=5",
+                "image": "electricalmaintenance.png",
                 "alt": "Electrical maintenance"
             },
             { 
                 "title": "Consultation & Planning", 
                 "description": "Expert consultation for electrical projects from concept to completion.",
                 "icon": "fas fa-comments",
-                "image": "https://picsum.photos/400/300?random=6",
+                "image": "consultationandplanning.png",
                 "alt": "Electrical consultation"
             }
         ];
@@ -323,15 +455,15 @@
             { 
                 "title": "Lubao Residential Solar Farm", 
                 "description": "50kW solar installation for a residential community in Lubao, reducing electricity costs by 70%.",
-                "image": "https://picsum.photos/600/400?random=7",
+                "image": "residentialsolarfarm.png",
                 "alt": "Lubao residential solar project",
                 "location": "Lubao, Pampanga",
                 "capacity": "50 kW"
             },
             { 
-                "title": "Pampanga Industrial Complex", 
+                "title": "Industrial Complex", 
                 "description": "200kW commercial solar system for an industrial complex, providing sustainable power for manufacturing.",
-                "image": "https://picsum.photos/600/400?random=8",
+                "image": "industrialcomplex.png",
                 "alt": "Industrial solar installation",
                 "location": "Pampanga",
                 "capacity": "200 kW"
@@ -362,12 +494,11 @@
         ];
 
         const footerLinksData = [
-            { "label": "About Us", "href": "#about" },
+         
             { "label": "Services", "href": "#services" },
             { "label": "Projects", "href": "#projects" },
-            { "label": "Contact", "href": "#contact" },
-            { "label": "Privacy Policy", "href": "#privacy" },
-            { "label": "Terms of Service", "href": "#terms" }
+            { "label": "Why Choose Us", "href": "#why-us" },
+           
         ];
 
         const footerServicesData = [
